@@ -1,4 +1,4 @@
-// import express from "express";
+// import express from "express"; node cannot use ES6 import
 const express = require('express');
 // import expressGraphQL from "express-graphql";
 const expressGraphQL = require('express-graphql');
