@@ -1,6 +1,12 @@
 {
     "users": [
-        {"id": "23", "firstName": "Bill", "age": 32},
-        {"id": "40", "firstName": "Alex", "age": 40}
+        {"id": "23", "firstName": "Bill", "age": 20, "companyId": "1"},
+        {"id": "40", "firstName": "Alex", "age": 40, "companyId": "2"},
+        {"id": "51", "firstName": "Harry", "age": 18, "companyId": "1"},
+        {"id": "30", "firstName": "Nick", "age": 18, "companyId": "2"}
+    ],
+    "companies": [
+        {"id": "1", "name": "Apple", "description": "Iphone"},
+        {"id": "2", "name": "Google", "description": "search"}
     ]
 }
