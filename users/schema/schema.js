@@ -85,6 +85,17 @@ const mutation = new GraphQLObjectType({
                 return axios.post(`http://localhost:3000/users`, {firstName, age})//axios.get return a Promise
                 .then(response => response.data);
             }
+        },
+        deleteUser: {
+            type: UserType,
+            args: {
+                id: {type: new GraphQLNonNull(GraphQLString)}
+            },
+            resolve(parentValue, {id}){//here need to put the id parameter inside a {}, 
+                                       //which is destruction, because the "id" was defined inside args object as property
+                return axios.delete(`http://localhost:3000/users/${id}`)//axios.get return a Promise
+                .then(response => response.data);
+            }
         }
     }
 })
